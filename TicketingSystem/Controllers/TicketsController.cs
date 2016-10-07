@@ -46,7 +46,7 @@ namespace TicketingSystem.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Issue,Description")] Ticket ticket)
+        public ActionResult Create([Bind(Include = "ID,Issue,Description,DateTime,Status")] Ticket ticket)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace TicketingSystem.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Issue,Description")] Ticket ticket)
+        public ActionResult Edit([Bind(Include = "ID,Issue,Description,DateTime,Status")] Ticket ticket)
         {
             if (ModelState.IsValid)
             {

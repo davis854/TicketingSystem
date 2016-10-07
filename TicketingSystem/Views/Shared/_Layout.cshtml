@@ -25,6 +25,7 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Create Ticket", "Create", "Tickets")</li>
+                    <li>@Html.ActionLink("Chat with a Technician", "Chat", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -39,6 +40,8 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("/Scripts/jquery.signalR-2.1.2.min.js")
+    @Scripts.Render("/signalr/hubs")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

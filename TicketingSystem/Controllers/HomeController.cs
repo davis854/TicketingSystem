@@ -15,14 +15,20 @@ namespace TicketingSystem.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Service Desk Help Center is committed to providing excellent customer service. When a customer has a technical issue, they choose us.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Questions or concerns? Our contact information is listed below.";
+
+            return View();
+        }
+        public ActionResult Chat()
+        {
+            ViewBag.Message = "Chat with an online professional technician. We are here to help resolve any technical issues or concerns you may have.";
 
             return View();
         }

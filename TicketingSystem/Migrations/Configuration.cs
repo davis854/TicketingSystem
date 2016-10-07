@@ -9,7 +9,7 @@ namespace TicketingSystem.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
             ContextKey = "TicketingSystem.Models.ApplicationDbContext";
         }
 
