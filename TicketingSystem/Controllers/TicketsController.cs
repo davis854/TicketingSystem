@@ -51,13 +51,13 @@ namespace TicketingSystem.Controllers
             if (ModelState.IsValid)
             {
                 db.Tickets.Add(ticket);
-                db.SaveChanges();
+                db.SaveChanges(); 
+                ticket.Status = "Open";
                 return RedirectToAction("Index");
             }
 
             return View(ticket);
         }
-
         // GET: Tickets/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -67,7 +67,7 @@ namespace TicketingSystem.Controllers
             }
             Ticket ticket = db.Tickets.Find(id);
             if (ticket == null)
-            {
+            { //hghghghg
                 return HttpNotFound();
             }
             return View(ticket);
@@ -81,6 +81,7 @@ namespace TicketingSystem.Controllers
         public ActionResult Edit([Bind(Include = "ID,Issue,Description,DateTime,Status")] Ticket ticket)
         {
             if (ModelState.IsValid)
+           
             {
                 db.Entry(ticket).State = EntityState.Modified;
                 db.SaveChanges();
