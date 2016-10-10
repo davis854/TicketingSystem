@@ -11,5 +11,6 @@ namespace TicketingSystem.Models
         public int ID { get; set; }
         public int TicketID { get; set; }
         public string Solution { get; set; }
+        public string Remarks { get; set; }
     }
 }

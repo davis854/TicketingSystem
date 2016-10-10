@@ -67,7 +67,7 @@ namespace TicketingSystem.Controllers
             }
             Ticket ticket = db.Tickets.Find(id);
             if (ticket == null)
-            { //hghghghg
+            { 
                 return HttpNotFound();
             }
             return View(ticket);
@@ -124,5 +124,6 @@ namespace TicketingSystem.Controllers
             }
             base.Dispose(disposing);
         }
+      
     }
 }

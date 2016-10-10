@@ -9,5 +9,6 @@ namespace TicketingSystem.Models
         public string Description { get; set; }
         public DataType DateTime { get; set; }
         public string Status { get; set; } 
+        public DataType AppointmentTime { get; set; }
     }
 }
