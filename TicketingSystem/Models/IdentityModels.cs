@@ -24,7 +24,7 @@ namespace TicketingSystem.Models
         public DbSet<Response> Responses { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("AppHabor", throwIfV1Schema: false)
         {
         }
 
