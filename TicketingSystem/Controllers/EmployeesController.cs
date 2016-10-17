@@ -10,6 +10,7 @@ using TicketingSystem.Models;
 
 namespace TicketingSystem.Controllers
 {
+    [Authorize]
     public class EmployeesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
